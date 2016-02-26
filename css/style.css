@@ -37,12 +37,36 @@ nav li{
     margin-right: 20px;
 }
 .banner{
-    height: 60vh;
+    height: 350px;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 50px;
     background-color: aqua;
     color: aliceblue;
+    font-size: 1.2em;
+    line-height: 0.6em;
 }
 img{
-    width: 150px;
+    width: 200px;
+    margin-bottom: 5px;
 }
+.container {
+    width: 80%;
+    border: 1px dashed;
+    margin: auto;
+}
+.container h2{
+    color: midnightblue;
+}
+.secondary , .tertiary {
+    width: 30%;
+    float: left;
+}
+.primary {
+    width: 40%;
+    float: left;
+}
+.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
