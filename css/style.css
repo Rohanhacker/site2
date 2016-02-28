@@ -43,8 +43,9 @@ nav li{
     background-color: aqua;
     color: aliceblue;
     font-size: 1.6em;
-    line-height: 0.5em;
+    line-height: 0.8em;
 }
+/* layout */
 img{
     width: 160px;
     margin-bottom: 5px;
@@ -64,13 +65,8 @@ img{
     width: 40%;
     float: left;
 }
-.clearfix::after {
-		content: " ";
-		display: table;
-		clear: both;
-	}
 .feat-img{
-    width: 400px;
+    width: 100%;
 }
 .col {
     padding: 10px 30px;
@@ -88,4 +84,48 @@ img{
     font-family: 'Varela Round', sans-serif;
     padding-top: 25px;
     margin-top: 50px;
+}
+
+/* clearfix */
+.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+/* media queries */
+@media (max-width: 990px) {
+    .secondary {
+        width: 50%;
+        float: left;
+    }
+    .primary {
+        float: right;
+        width: 50%;
+    }
+    .tertiary {
+        float: left;
+        width: 100%;
+    }
+    nav, ul, li{
+    display: block;
+}
+    nav {
+    float: none;
+    font-family: monospace;
+    font-size: 1.4em;
+}   
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        padding: 5px;
+    }
+    .fluid {
+        text-align: center;
+    }
+    .name ,nav {
+        padding: 0;
+        margin: auto;
+    }
 }
